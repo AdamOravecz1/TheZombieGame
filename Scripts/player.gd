@@ -4,9 +4,6 @@ extends Entity
 
 var speed: int = 150
 
-
-
-
 func _process(delta):
 	movement()
 	animate()
