@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4wsaw4cnxi8m"]
+
+[ext_resource type="Texture2D" uid="uid://65j3c4q757ck" path="res://icon.svg" id="1_2efbs"]
+[ext_resource type="PackedScene" uid="uid://cink4q5iofvpd" path="res://Scenes/player.tscn" id="2_u0c1f"]
+[ext_resource type="PackedScene" uid="uid://dy6n7oerol8fy" path="res://Scenes/zombie.tscn" id="3_dv41g"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-32, -59)
+texture = ExtResource("1_2efbs")
+
+[node name="Player" parent="." instance=ExtResource("2_u0c1f")]
+
+[node name="Zombie" parent="." instance=ExtResource("3_dv41g")]
+position = Vector2(-81, -27)

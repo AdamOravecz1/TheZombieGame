@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://0k782x71i47e"]
+
+[ext_resource type="Script" path="res://Scripts/entity.gd" id="1_qlqlc"]
+
+[node name="Entity" type="CharacterBody2D"]
+script = ExtResource("1_qlqlc")
+
+[node name="Timers" type="Node2D" parent="."]
