@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct4hpujk4iqws"]
+
+[ext_resource type="Texture2D" uid="uid://dsxx88po2aqgx" path="res://Sprites/AKParts.png" id="1_vmn17"]
+
+[node name="Weapon" type="Node2D"]
+
+[node name="Mag" type="Sprite2D" parent="."]
+position = Vector2(-10, 5)
+texture = ExtResource("1_vmn17")
+vframes = 4
+
+[node name="Stock" type="Sprite2D" parent="."]
+position = Vector2(13, -1)
+texture = ExtResource("1_vmn17")
+vframes = 4
+frame = 1
+
+[node name="Body" type="Sprite2D" parent="."]
+position = Vector2(-6, -1)
+texture = ExtResource("1_vmn17")
+vframes = 4
+frame = 2
+
+[node name="Barrel" type="Sprite2D" parent="."]
+position = Vector2(-29, -3)
+texture = ExtResource("1_vmn17")
+vframes = 4
+frame = 3

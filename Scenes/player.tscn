@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://cink4q5iofvpd"]
+[gd_scene load_steps=16 format=3 uid="uid://cink4q5iofvpd"]
 
 [ext_resource type="PackedScene" uid="uid://0k782x71i47e" path="res://Scenes/entity.tscn" id="1_w4plv"]
 [ext_resource type="Texture2D" uid="uid://c7ap1qcar1rgs" path="res://Sprites/Player.png" id="1_ysyd5"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="2_vdgf4"]
+[ext_resource type="PackedScene" uid="uid://ct4hpujk4iqws" path="res://Scenes/weapon.tscn" id="4_cvkqg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2qoki"]
 size = Vector2(6, 21)
@@ -91,9 +92,12 @@ position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_2qoki")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_y7iam")
 animation = &"run"
 autoplay = "stand"
 
 [node name="Camera2D" type="Camera2D" parent="." index="2"]
-zoom = Vector2(4, 4)
+
+[node name="Weapon" parent="." index="4" instance=ExtResource("4_cvkqg")]
+position = Vector2(1, 0)
